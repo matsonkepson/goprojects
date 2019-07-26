@@ -21,10 +21,10 @@ func main() {
 		fmt.Println("This prots is restricted\nTry something above 1024", os.Args[1], err)
 	} */
 
-	if os.Args[1] <= init(1024) {
+	/* 	if os.Args[1] <= init(1024) {
 		fmt.Println("This prots is restricted\nTry something above 1024")
 		os.Exit(1)
-	}
+	} */
 
 	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
 		fmt.Fprintf(w, "i am ready, %q", html.EscapeString(req.URL.Path))
