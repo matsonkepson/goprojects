@@ -11,7 +11,7 @@ type Inventory struct {
 }
 
 func main() {
-	sweaters := Inventory{"wool", 17}
+	sweaters := Inventory{"steel", 2}
 	tmpl, err := template.New("test").Parse("{{.Count}} items are made of {{.Material}}")
 	if err != nil {
 		panic(err)
