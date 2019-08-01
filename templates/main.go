@@ -7,7 +7,7 @@ import (
 
 type Inventory struct {
 	Material string
-	Count    uint
+	Count    int
 }
 
 func main() {
