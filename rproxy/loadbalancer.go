@@ -20,6 +20,8 @@ func NewMultipleHostReverseProxy(targets []*url.URL) *httputil.ReverseProxy {
 	return &httputil.ReverseProxy{Director: director}
 }
 
+// opening localport 1100 to rporoxy trafic from 1111 and 1122
+
 func main() {
 	proxy := NewMultipleHostReverseProxy([]*url.URL{
 		{
