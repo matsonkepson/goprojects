@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	f, err := os.Create("./out.log")
+	f, err := os.Create("./misc/out.log")
 	if err != nil {
 		panic(err)
 	}
