@@ -1,0 +1,1 @@
+Przyklady wziete z  ftp://ftp.helion.pl/przyklady/jgopop.zip
