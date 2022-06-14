@@ -10,15 +10,15 @@ import (
 
 func main() {
 	dt := time.Now()
-	year := dt.Format("2006")
-	year_toint, _ := strconv.Atoi(year)
-	year_prev := year_toint - 1
-	mont := dt.Format("01")
-	mont_toint, _ := strconv.Atoi(mont)
-	mont_prev := mont_toint - 01
+	yyyy := dt.Format("2006")
+	yyyy_toint, _ := strconv.Atoi(yyyy)
+	yyyy_prev := yyyy_toint - 1
+	mm := dt.Format("01")
+	mm_toint, _ := strconv.Atoi(mm)
+	mm_prev := mm_toint - 01
 
 	fmt.Println("Current year: ", dt.Format("2006"))
 	fmt.Println("Current month: ", dt.Format("01"))
-	fmt.Printf("Print a previous Year: %04d\n", year_prev)
-	fmt.Printf("Print a previous Month: %02d\n", mont_prev)
+	fmt.Printf("Print a previous Year: %04d\n", yyyy_prev)
+	fmt.Printf("Print a previous Month: %02d\n", mm_prev)
 }
